@@ -18,7 +18,7 @@ export default function Home() {
         <div className="w-full h-[1px] bg-black/[.1] dark:bg-white/[.1]"></div>
         <ol className="list-inside list-decimal text-base/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)] text-gray-500">
           <li className="mb-2 tracking-[-.01em]">
-            <a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
+            <a href="/articles/launchmode" target="_blank" rel="noopener noreferrer" className="hover:underline">
               安卓: 一例activity多任务栈导致的页面退到后台的问题
             </a>
           </li>
