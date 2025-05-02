@@ -1,0 +1,59 @@
+
+
+# Windows桌面端UI框架选型
+
+
+
+## 1. 框架有哪些
+
+- WinUI (C#)
+- Electron (js+css)
+- Qt (C++)
+- Flutter (Dart)
+- React Native for Windows (js+css)
+- imgui (C++)
+- compose desktop (kotlin)
+- Duilib (C++)
+
+## 2. 可迁移性
+选择一个框架，当然希望从中学习到的技术是可迁移的，不是孤立的。
+
+如果带点功利目的，就业市场哪种技术需求量大，我们就学习什么技术。
+
+- WinUI是首先被排除的，C#在国内除了游戏研发，使用场景乏善可陈。
+- Flutter中小厂使用居多，大厂的跨端方案一般是React native。目前已知的大规模使用Flutter的大厂就是阿里的闲鱼。
+- Qt一般用于工业界，产品对稳定性和性能要求较高，比如一些嵌入式设备多采用Qt开发界面。
+- React Native for Windows是微软官方出品的框架，可使用React native的能力开发windows app，目前绝大部分大厂的跨端方案多采用React native。
+- Duilib 大厂中网易云信、腾讯的一些windows app使用过该框架。Duilib只能适配windows系统，但C++学习了是不吃亏的。
+- Electron 国内外大厂多采用它开发桌面app，javascript作为最流行的开发语言，学习了肯定有益无害。
+- imgui多见于游戏UI设计，对图形学等基本功有一定的要求。国内使用较少，个人不建议学。
+- compose desktop目前国内没有大厂出品过相关的桌面app，但kotlin是安卓指定的官方语言，学了不吃亏学了不上当。
+
+## 3. 可模仿性
+github是否有足够多的开源项目可以供我们模仿借鉴。
+
+如何设计出美观的界面对工程师来说是一件难度颇高的事情。有“前车之鉴”当然可以减少我们的开发难度。
+
+目前github上成品app较多的框架有Electron、Qt、Flutter。
+
+其他的只有React Native for Windows、WinUI、Compose Desktop有官方出品的demo，可以稍微借鉴一下。
+
+## 3. 开发文档是否健全
+
+- WinUI、Electron、Flutter、React Native for Windows、compose desktop从安装到写出hello world有详细的指导文档。
+- Qt用户量大，但是配置编译环境并没有一定之规，需要我们自己搜索查阅大量的资源，很容易踩坑。
+- Duilib、imgui开发文档就更少了，入门成本高昂。
+
+
+## 4. 包体积
+
+我们业余开发项目，总是希望安装包越小越好。
+
+- Electron 包体积较大，一般有一百多M
+- React Native for Windows打包后体积较小，大概几M左右
+- Qt、Flutter、compose desktop 打包后有几十M的大小。
+- Duilib、imgui是最小的，UI库非常轻量级。
+
+最后，作为安卓研发，如果让我选我就选compose desktop，无痛入门。
+
+
