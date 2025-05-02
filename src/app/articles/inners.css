@@ -13,6 +13,8 @@
   --sh-jsxliterals: #7aa2f7;
   --sh-property: #73daca;
   --sh-entity: #e0af68;
+  --background: #f2f2f2;
+  --foreground: #171717;
 }
 
 html {
@@ -22,6 +24,7 @@ html {
 
 body {
   text-rendering: optimizeLegibility;
+  background: var(--background);
 }
 
 h1,
